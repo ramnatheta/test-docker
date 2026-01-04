@@ -13,12 +13,8 @@ ENV URL_RCLONE="https://rclone.org/install.sh"
 RUN curl "$URL_RCLONE" | bash
 
 # Install air
-# ENV URL_AIR="https://github.com/posit-dev/air/releases/latest/download/air-installer.sh"
-# RUN curl -LsSf "$URL_AIR" | bash -s -- -b /usr/local/bin
-RUN curl -L \
-  https://github.com/posit-dev/air/releases/latest/download/air-linux-amd64 \
-  -o /usr/local/bin/air \
- && chmod +x /usr/local/bin/air
+ENV URL_AIR="https://github.com/posit-dev/air/releases/latest/download/air-installer.sh"
+RUN AIR_INSTALL_DIR=/usr/local/bin curl -LsSf "$URL_AIR" | bash -s -- -b /usr/local/bin
 
 # Install stable dependencies from CRAN
 COPY ./DESCRIPTION /tmp/DESCRIPTION
