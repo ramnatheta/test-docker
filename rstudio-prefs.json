@@ -43,6 +43,6 @@
   "git_diff_ignore_whitespace": true,
   "reformat_on_save": true,
   "code_formatter": "external",
-  "code_formatter_external_command": "/home/rstudio/.local/bin/air format",
+  "code_formatter_external_command": "/usr/local/bin/air format",
   "posix_terminal_shell": "zsh"
 }
