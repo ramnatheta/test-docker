@@ -28,5 +28,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ramnathv/test_v1:latest
+          tags: ramnathv/test_v1:0.1
 
