@@ -19,3 +19,5 @@ RUN curl -LsSf "$URL_AIR" | sh -s -- -b /usr/local/bin
 # Install stable dependencies from CRAN
 COPY ./DESCRIPTION /tmp/DESCRIPTION
 RUN Rscript -e "devtools::install_deps('/tmp', upgrade = FALSE)"
+
+COPY rstudio-prefs.json /etc/rstudio/rstudio-prefs.json
