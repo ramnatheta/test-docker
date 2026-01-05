@@ -52,6 +52,7 @@ Imports:
     lubridate,
     MASS,
     Matrix,
+    matrixStats,
     markdown,
     mosaic,
     Metrics,
