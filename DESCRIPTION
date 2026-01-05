@@ -67,6 +67,7 @@ Imports:
     reactablefmtr,
     reshape,
     reshape2,
+    rio,
     rlecuyer,
     R.utils,
     Rcpp,
