@@ -27,6 +27,7 @@ Imports:
     fastmatch,
     fBasics,
     fields,
+    forecast,
     future,
     future.apply,
     doFuture,
@@ -62,6 +63,8 @@ Imports:
     progressr,
     pryr,
     qs,
+    reactable,
+    reactablefmtr,
     reshape,
     reshape2,
     rlecuyer,
@@ -83,12 +86,16 @@ Imports:
     styler,
     sys,
     targets,
+    tarchetypes,
     tictoc,
     tidytable,
     trelliscopejs,
     viridis,
     TMB,
+    TMBtools,
     xtable,
     yaml,
     zeallot,
     zoo
+Remotes:
+    mlysy/TMBtools
